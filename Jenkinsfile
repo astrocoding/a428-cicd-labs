@@ -5,9 +5,9 @@ node {
             // Menjalankan perintah npm install
             sh 'npm install'
         }
-        // stage('Test') {
-        //     // Menjalankan skrip test
-        //     sh './jenkins/scripts/test.sh'
-        // }
+        stage('Test') {
+            // Menjalankan skrip test
+            sh './jenkins/scripts/test.sh'
+        }
     }
 }
